@@ -81,7 +81,7 @@ a:hover{
 }
 
 .all-subject{
-    grid-template-rows: 3% repeat(15, 1fr);
+    grid-template-rows: auto repeat(15, 1fr);
     grid-template-columns: 5% 2% repeat(14, 1fr);
     color: transparent !important;
 }
@@ -102,7 +102,6 @@ a:hover{
 
 .week{
     background: gray;
-    
     grid-row: 1/2;
     text-align: center;
     font-weight: bold;
@@ -112,7 +111,7 @@ a:hover{
     align-items: center; 
 }
 
-.columnHide{
+.columnHide, .transparent{
     visibility: hidden;
 }
 
@@ -190,16 +189,57 @@ a:hover{
 .subject__1_A {grid-row: 4;}
 
 [class^="subject"]{
-    display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; font-weight: bold; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    font-weight: bold; 
     padding: 0.5em; 
     /* color: white; */
 }
 
+[class*="subject"].gridColumn{
+    display: grid;
+    grid-template-rows: 20% 80%;
+    padding: 0px;
+    margin: 0px;
+    row-gap: 0;
+    column-gap: 0;
+}
+
+[class*="subject"].gridColumn > .main{
+    /* padding-bottom: 0.5em; */
+    /* border-bottom: 2px solid #2e2e2e; */
+    grid-column: 1/-1 !important;
+}
+
+[class*="subject"].gridColumn > .sub{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    column-gap: 0.25em;
+    row-gap: 0.25em;
+    padding: 0 0.25em;
+}
+
+[class*="subject"].gridColumn > .sub > div{
+    padding: 0.5em;
+    border-radius: 0.8em;
+}
+
+[class*="subject"].gridColumn > .sub.TwoCol{
+    grid-template-columns: repeat(2,1fr);
+}
+
+[class*="subject"].gridColumn > .sub.fiveCol{
+    grid-template-columns: repeat(5,1fr);
+}
 
 .subject1_L1 {grid-column: 3 / span 1; grid-row: 2}
 .subject1_L2 {grid-column: 4 / span 2; grid-row: 2}
-.subject1_L3 {grid-column: 6 / span 2; grid-row: 2}
-.subject1_L4 {grid-column: 8 / span 2; grid-row: 2}
+.subject1_L3 {grid-column: 6 / span 1; grid-row: 2}
+.subject1_L4 {grid-column: 7 / span 2; grid-row: 2}
 .subject1_L5 {grid-column: 10 / span 2; grid-row: 2}
 .subject1_L6 {grid-column: 12 / span 2; grid-row: 2}
 .subject1_L7 {grid-column: 14 / span 2; grid-row: 2}
@@ -258,9 +298,12 @@ a:hover{
 
 [class*="subject2_P"]{grid-row: 7;}
 .one-subject [class*="subject2_P"]{grid-row: 4;}
-.subject2_P1 {grid-column: 3 / span 5;}
-.subject2_P2 {grid-column: 8 / span 4;}
-.subject2_P3 {grid-column: 12 / span 5;}
+.subject2_P1 {grid-column: 3 / span 3;}
+.subject2_P1S {grid-column: 6 / span 1;}
+.subject2_P2 {grid-column: 7 / span 3;}
+.subject2_P2S {grid-column: 10 / span 1;}
+.subject2_P3 {grid-column: 12 / span 3;}
+.subject2_P3S {grid-column: 15 / span 1;}
 
 [class*="subject2_A"]{grid-row: 8;}
 .one-subject [class*="subject2_A"]{grid-row: 5;}
