@@ -240,10 +240,10 @@ a:hover{
 .subject1_L2 {grid-column: 4 / span 2; grid-row: 2}
 .subject1_L3 {grid-column: 6 / span 1; grid-row: 2}
 .subject1_L4 {grid-column: 7 / span 2; grid-row: 2}
-.subject1_L5 {grid-column: 10 / span 2; grid-row: 2}
-.subject1_L6 {grid-column: 12 / span 2; grid-row: 2}
-.subject1_L7 {grid-column: 14 / span 2; grid-row: 2}
-.subject1_L8 {grid-column: 16 / span 1; grid-row: 2}
+.subject1_L5 {grid-column: 9 / span 2; grid-row: 2}
+.subject1_L6 {grid-column: 11 / span 2; grid-row: 2}
+.subject1_L7 {grid-column: 13 / span 2; grid-row: 2}
+.subject1_L8 {grid-column: 15 / span 2; grid-row: 2}
 
 [class*="subject1_P"]{background: var(--subject1); grid-row: 3}
 .subject1_P1 {grid-column: 3 / span 1; }
@@ -302,6 +302,7 @@ a:hover{
 .subject2_P1S {grid-column: 6 / span 1;}
 .subject2_P2 {grid-column: 7 / span 3;}
 .subject2_P2S {grid-column: 10 / span 1;}
+.subject2_PX {grid-column: 11 / span 1;}
 .subject2_P3 {grid-column: 12 / span 3;}
 .subject2_P3S {grid-column: 15 / span 1;}
 
@@ -384,7 +385,7 @@ a:hover{
 .subject4_L2 {grid-column: 5 / span 3; }
 .subject4_L3 {grid-column: 8 / span 2; }
 .subject4_LMT {grid-column: 10 / span 1; }
-.subject4_L4 {grid-column: span 1; }
+.subject4_L4 {grid-column: 11 / span 1; }
 .subject4_L5 {grid-column: span 3; }
 .subject4_L6 {grid-column: span 2; }
 
@@ -392,7 +393,7 @@ a:hover{
 .one-subject [class*="subject4_P"] {grid-row: 4}
 .subject4_P1 {grid-column: 3 / span 4;}
 .subject4_P2 {grid-column: 7 / span 3;}
-.subject4_P3 {grid-column: span 2;}
+.subject4_P3 {grid-column: 10 /span 2;}
 .subject4_PSP {grid-column: span 2;}
 .subject4_P4 {grid-column: span 1;}
 .subject4_P5 {grid-column: 16/17;}
