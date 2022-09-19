@@ -346,9 +346,10 @@ a:hover{
 .subject3_T6 {grid-column: 9 / span 1;}
 .subject3_TMT {grid-column: 10 / span 1;}
 .subject3_T7 {grid-column: 11 / span 2;}
-.subject3_T9 {grid-column: 13;}
+.subject3_T8 {grid-column: 13;}
+.subject3_T9 {grid-column: 14;}
 .subject3_T10 {grid-column: 15;}
-.subject3_T11 {grid-column: 16 / 17;}
+.subject3_T11 {grid-column: 16;}
 
 [class*="subject3_P"]{grid-row: 11;}
 .one-subject [class*="subject3_P"]{grid-row: 4;}
