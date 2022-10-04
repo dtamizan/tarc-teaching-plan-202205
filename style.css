@@ -256,6 +256,7 @@ a:hover{
 .subject1_P8 {grid-column: 13 / span 1; }
 .subject1_P9 {grid-column: 14 / span 1; }
 .subject1_P10 {grid-column: 15 / span 1; }
+.subject1_P11 {grid-column: 16 / span 1; }
 
 .subject1_A1 {grid-column: 5 / span 1; grid-row: 4}
 .subject1_A2 {grid-column: 6 / span 3; grid-row: 4}
@@ -353,6 +354,9 @@ a:hover{
 
 [class*="subject3_P"]{grid-row: 11;}
 .one-subject [class*="subject3_P"]{grid-row: 4;}
+.subject3_P1 {grid-column: 3}
+/* .subject3_P2 {grid-column: 2}*/
+.subject3_P3 {grid-column: 5} 
 .subject3_P4 {grid-column: 6 / span 2;}
 .subject3_P5 {grid-column: 8 / span 5;}
 .subject3_P6 {grid-column: 13 / span 2;}
@@ -389,7 +393,7 @@ a:hover{
 .subject4_LMT {grid-column: 10 / span 1; }
 .subject4_L4 {grid-column: 11 / span 1; }
 .subject4_L5 {grid-column: 12 / span 3; }
-.subject4_L6 {grid-column: span 2; }
+.subject4_L6 {grid-column: 15 / span 2; }
 
 [class*="subject4_P"] {grid-row: 15}
 .one-subject [class*="subject4_P"] {grid-row: 4}
